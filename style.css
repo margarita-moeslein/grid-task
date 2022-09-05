@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --clr-bg: aquamarine;
+    --clr-darker: rgba(0 0 0 / 0.35);
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 1rem;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    font-size: 1.5em;
+  }
+  /* === from here on our CSS === */
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+   
+  }
+  .grid-child {
+    background-color: var(--clr-bg);
+    padding: 1rem;
+  }
+  
+  .special {
+    grid-column: span 2;
+  }
+  
+  .extreme {
+    grid-row: span 2;
+  }
